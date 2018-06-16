@@ -1,3 +1,0 @@
-/home/randy/Downloads/bitcurrency/src/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/home/randy/Downloads/bitcurrency/src/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/randy/Downloads/bitcurrency/src/cmake-build-release/CMakeFiles/src.dir
