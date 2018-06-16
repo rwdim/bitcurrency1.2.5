@@ -1,15 +1,23 @@
 # Prerequisites
 *.d
 
+#unwanted dirs
+obj
+obj-test
+build
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+*.qm
 
 # Precompiled Headers
 *.gch
 *.pch
+qrc_bitcoin.cpp
+
 
 # Compiled Dynamic libraries
 *.so
@@ -30,4 +38,8 @@
 *.exe
 *.out
 *.app
+bitcurrency-qt
+src/bitcurrencyd
 
+# others
+Makefile
