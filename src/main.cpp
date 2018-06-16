@@ -970,8 +970,8 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
     int64_t nSubsidy = 0 * COIN;
     if(nHeight == 1)
-       nSubsidy = 181600000 * COIN;
-       //of these 181600000 coins, coins were sent 10:1 to all people who decided to convert their old bitcurrency to new ones.
+       nSubsidy = 181600000 * COIN; 
+       //of these 181600000 coins, coins were sent 10:1 to all people who decided to convert their old bitcurrency to new ones. 
        //Not all old bitcurrency holders decided to convert their coins. so 54,641,736.446017 bitcurrency were burned to the address BBurnaddress11111111111111113HmVY2
        //before that, bitcurrency was named whistlecoin.
     else if (nHeight > 1 && nHeight <= 10 )
@@ -1809,7 +1809,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
 // ppcoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
-// might not find out about their coin age. Older transactions are
+// might not find out about their coin age. Older transactions are 
 // guaranteed to be in main chain by sync-checkpoint. This rule is
 // introduced to help nodes establish a consistent view of the coin
 // age (trust score) of competing branches.
@@ -3283,8 +3283,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
     // This asymmetric behavior for inbound and outbound connections was introduced
     // to prevent a fingerprinting attack: an attacker can send specific fake addresses
-    // to users' AddrMan and later request them by sending getaddr messages.
-    // Making users (which are behind NAT and can only make outgoing connections) ignore
+    // to users' AddrMan and later request them by sending getaddr messages. 
+    // Making users (which are behind NAT and can only make outgoing connections) ignore 
     // getaddr message mitigates the attack.
     else if ((strCommand == "getaddr") && (pfrom->fInbound))
     {
